@@ -1,0 +1,23 @@
+<!-- Tag in comment
+importance: 3
+What does this code show? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tag in comment</title>
+</head>
+<body>
+  <script>
+    let body = document.body;
+    // Aceasta linie atribuie referinta a elementului < body > to the variable body.
+
+    body.innerHTML = "<!--" + body.tagName + "-->";
+
+    alert(body.firstChild.data); // what's here? 
+    // Acest cod demonstreaza utilizarea JS-ului pentru a modifica conținutul HTML al elementului < body > și apoi accesează datele primului sau copil (firstChild). Cand acest cod este executat, apare o alerta care afiseaza tag name a elementului < body > extras din comentariu.
+  </script>
+</body>
+</html>

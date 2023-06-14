@@ -1,0 +1,47 @@
+<!-- What's in the nodeType?
+  Proprietatea nodeType este o valoare intreaga care reprezinta tipul unui nod DOM ( Document Object Model ). Sunt diferite valori nodeType si tipuri de noduri corespunzatoare acestora, cum ar fi :
+
+    * "1 "  - Element node (Reprezinta un nod element, cum ar fi < div >, < p >, < ul > etc. Acesta este cel mai frecvent tip de nod pe care il intalnim atunci cand lucram cu elemente HTML.)
+
+    * "2 "  - Attribute node (Reprezinta un atribut al unui element, cum ar fi clasa, id, src etc.) 
+
+    * "3 "  - Text node (Reprezinta un nod text care conține conținutul textual dintr-un element. De exemplu, textul real dintr-un element < p> sau < span>.)
+
+    * "4"  - Cdata section node (Reprezintă o secțiune CDATA (character data) dintr-un document XML.)
+    character data : is defined as blocks of text that are not parsed by the parser, but are otherwise recognized as markup. The predefined entities such as &lt;, &gt;, and &amp; require typing and are generally difficult to read in the markup.) -> legacy -> not commonly used
+
+    * "5" - Entity reference node (Reprezinta un nod de referinta al entitatii, cum ar fi & amp;, & lt;, & gt;, etc.) -> legacy -> not commonly used
+
+    * "6" - Entity node (Reprezinta un nod de entitate) -> legacy -> not commonly used
+
+    * "7" - Processing instruction node (Reprezinta un nod de instructiuni de procesare.) -> not commonly used
+
+    * "8 "  - Comment node (Reprezinta un nod de comentarii, care contine comentarii în documente HTML sau XML.)
+
+    * "9 "  - Document node (Reprezinta intregul document, accesat de obicei prin document.)
+
+    * "10"   - Document type node ( Reprezinta declaratia de tip document, cum ar fi <!DOCTYPE html>.)
+
+    * "11"   - Document fragment node (Reprezinta un nod de fragment de document. Fragmentele de document sunt utilizate pentru a tine temporar un grup de noduri.)
+
+    * " 12" - Notation node (Reprezinta o notatie, un notation node) -> not commonly used
+
+importance: 5
+What does the script show? 
+
+Acest script afiseaza o alerta cu tipul de nod al ultimului copil al elementului <body>. Se returneaza un numar intreg reprezentind tipul nodului. In acest caz ultimul copil este elementul script, tipul sau este 1, care reprezinta un node element.
+
+-->
+
+
+
+<html>
+
+<body>
+  <script>
+    alert(document.body.lastChild.nodeType);
+  </script>
+</body>
+
+</html>
+
