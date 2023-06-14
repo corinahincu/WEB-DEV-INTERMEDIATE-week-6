@@ -10,6 +10,5 @@ importance: 4
     Obiectul document(document object) in Dom hierarchy reprezinta radacina arborelui DOM(root of the DOM tree)
 
   -Does it inherit from Node or Element, or maybe HTMLElement? 
-
-    Document nu mosteneste direct de la Node, Element, sau HTMLElement, dar are o relatie ierarhica cu acestia prin lantul de mostenire in DOM
+     Document nu mosteneste direct de la Node, Element, sau HTMLElement, dar are o relatie ierarhica cu acestia prin lantul de mostenire in DOM
   
