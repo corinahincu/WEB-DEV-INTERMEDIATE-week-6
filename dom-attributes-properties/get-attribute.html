@@ -1,0 +1,22 @@
+<!-- Get the attribute
+importance: 5
+Write the code to select the element with data-widget-name attribute from the document and to read its value. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div data-widget-name="menu">Choose the genre</div>
+
+  <script>
+    /* your code */
+        // getting it
+          let elem = document.querySelector('[data-widget-name]');
+
+          // reading the value
+          alert(elem.dataset.widgetName); // Proprietatea dataset ofera acces la custom data attributes. In acest caz, elem.dataset.widgetName preia direct valoarea atributului data-widget-name.
+          // or
+          //alert(elem.getAttribute('data-widget-name')); -> more general approach
+  </script>
+</body>
+</html>
