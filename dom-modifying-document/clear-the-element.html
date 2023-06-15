@@ -1,0 +1,34 @@
+<!-- Clear the element
+importance: 5
+Create a function clear(elem) that removes everything from the element. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ol id="elem">
+    <li>Hello</li>
+    <li>World</li>
+  </ol>
+
+  <script>
+    function clear(elem) { 
+      elem.innerHTML = '';
+    } 
+    // In acest cod, the clear function ia un element ca parametru. Utilizeaza proprietatea innerHTML a elementului pentru a-si seta continutul într-un empty string, eliminind toate elementele copilului din el.
+    function clear(elem) {
+        while (elem.firstChild) {
+          elem.firstChild.remove();
+        }
+      }
+      // In acest cod, the clear function loops intereaza asupra elementele primului copil in asa mod incat eliminind primul copil din element folosind metoda de eliminare. Acest proces continua pina cind elementul nu mai are child nodes, stergind continutul.
+    clear(elem); // clears the list
+  </script>
+</body>
+</html>
+
+
+
