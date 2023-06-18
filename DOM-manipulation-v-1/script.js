@@ -34,7 +34,7 @@ const spanBye = document.querySelector("#bye")
 console.log(spanHi.id ) // prints hi
 console.log(spanHi.title ) // prints hello
 
-console.log(spanHi.setAttribute("title", "sdfsdfsdf")) // it really explicit
+console.log(spanHi.setAttribute("title", "sdfsdfsdf")) // it's really explicit
 
 spanHi.id = "sdfsdfsdf"
 
